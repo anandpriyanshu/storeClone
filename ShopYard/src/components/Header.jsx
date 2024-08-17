@@ -1,11 +1,13 @@
-import React from 'react'
-
+import { IoIosPerson } from "react-icons/io";
+import { FaRegHeart } from "react-icons/fa6";
+import { MdOutlineShoppingBag } from "react-icons/md";
+import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <>
             <header>
                 <div className="logo_container">
-                    <a href="#"><img className="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home" /></a>
+                    <Link to="/"><img className="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home" /></Link>
                 </div>
                 <nav className="nav_bar">
                     <a href="#">Men</a>
@@ -21,20 +23,21 @@ const Header = () => {
                 </div>
                 <div className="action_bar">
                     <div className="action_container">
-                        <span className="material-symbols-outlined action_icon">person</span>
+                        <IoIosPerson />
                         <span className="action_name">Profile</span>
                     </div>
 
                     <div className="action_container">
-                        <span className="material-symbols-outlined action_icon">favorite</span>
+                        <FaRegHeart />
                         <span className="action_name">Wishlist</span>
                     </div>
 
-                    <a className="action_container" href="pages/bag.html">
-                        <span className="material-symbols-outlined action_icon">shopping_bag</span>
+                    <Link className="action_container" to="/bag">
+                        <MdOutlineShoppingBag />
+
                         <span className="action_name">Bag</span>
                         <span className="bag-item-count">0</span>
-                    </a>
+                    </Link>
                 </div>
             </header>
         </>
