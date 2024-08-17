@@ -285,6 +285,7 @@ a.action_container:link {
 }
 
 .bag-page {
+
     width: 75%;
     margin-left: 12.5%;
 }
@@ -297,6 +298,7 @@ a.action_container:link {
     color: #282c3f;
     font-size: 13px;
     line-height: 1.42857143;
+
 }
 
 .bag-details-container {
