@@ -4,12 +4,14 @@ import HeaderItem from "../components/HeaderItem"
 const Home = () => {
 
     const items = useSelector(store => store.items)
-    console.log(items)
+    // console.log(items)
     return (
         <>
             <main>
                 <div className="items-container">
-                    <HeaderItem item={items[0]} />
+
+                    {items.map((item) => <HeaderItem key={item.id} item={item} />)}
+
                 </div>
             </main>
         </>
