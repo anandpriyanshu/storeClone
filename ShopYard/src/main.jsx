@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client'
 import App from './routes/App.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-
+import { Provider } from 'react-redux'
 import Home from './routes/Home.jsx'
 import Bags from './routes/Bags.jsx'
-
+import StoreClone from './store/index.js'
 
 const router = createBrowserRouter([
 
@@ -29,8 +29,8 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
-    <RouterProvider router={router}>
-      <App />
-    </RouterProvider>
-  </StrictMode>,
+    <Provider store={StoreClone}>
+      <RouterProvider router={router} />
+    </Provider>
+  </StrictMode >,
 )
