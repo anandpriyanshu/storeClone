@@ -4,7 +4,7 @@ import HeaderItem from "../components/HeaderItem"
 const Home = () => {
 
     const items = useSelector(store => store.items)
-    // console.log(items)
+    console.log(items)
     return (
         <>
             <main>
