@@ -1,6 +1,26 @@
-
-
+import { useDispatch, useSelector } from "react-redux"
+import { bagAction } from "../store/bagSlice"
+import { MdOutlineAdd } from "react-icons/md";
+import { MdDeleteOutline } from "react-icons/md";
 const HeaderItem = ({ item }) => {
+
+
+    const dispatch = useDispatch()
+
+    const bagItems = useSelector(store => store.bag)
+    const elemnFound = bagItems.indexOf(item.id) >= 0
+
+
+
+    const handleAddtoBag = () => {
+
+        dispatch(bagAction.addToBag(item.id))
+    }
+
+    const handleRemove = () => {
+
+        dispatch(bagAction.removeFromBag(item.id))
+    }
     return (
         <>
             <div className="item-container">
@@ -15,7 +35,16 @@ const HeaderItem = ({ item }) => {
                     <span className="original-price">Rs {item.original_price}</span>
                     <span className="discount">({item.discount_percentage}% OFF)</span>
                 </div>
-                <button className="btn-add-bag" onClick={() => console.log('Iems was clicked')}>Add to Bag</button>
+
+                {elemnFound ?
+                    <button type="button" className="btn btn-add-bag btn-danger" onClick={handleRemove}> <MdDeleteOutline />
+                        Remove</button>
+                    :
+                    <button type="button" className="btn btn-add-bag btn-success" onClick={handleAddtoBag}><MdOutlineAdd />
+                        Add to Bag</button>}
+
+
+
             </div>
         </>
     )
