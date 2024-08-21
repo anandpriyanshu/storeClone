@@ -6,7 +6,7 @@ const BagItem = ({ item }) => {
 
     const dispatch = useDispatch()
 
-    const bagItems = useSelector(store => store.bag)
+
 
 
     const handleRemoveItems = () => {
