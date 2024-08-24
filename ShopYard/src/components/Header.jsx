@@ -11,7 +11,7 @@ const Header = () => {
         <>
             <header>
                 <div className="logo_container">
-                    <Link to="/"><img className="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home" /></Link>
+                    <Link to="/"><img className="myntra_home" src="images/Black White Elegant Monogram Initial Name Logo.png" alt="Myntra Home" /></Link>
                 </div>
                 <nav className="nav_bar">
                     <a href="#">Men</a>

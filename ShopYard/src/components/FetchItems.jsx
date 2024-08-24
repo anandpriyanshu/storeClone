@@ -11,7 +11,7 @@ const FetchItems = () => {
     // console.log(fetchStatus)
 
     useEffect(() => {
-        if (fetchStatus.fetchDone) return;
+        if (!fetchStatus) return;
 
         const controller = new AbortController()
         const signal = controller.signal

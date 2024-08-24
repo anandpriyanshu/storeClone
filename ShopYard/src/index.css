@@ -8,14 +8,14 @@
 header {
     display: flex;
     background-color: #ffffff;
-    height: 80px;
+    height: 85px;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #b6b1b1;
 }
 
 .myntra_home {
-    height: 45px;
+    height: 65px;
 }
 
 .logo_container {
@@ -417,4 +417,56 @@ a.action_container:link {
 .spinner {
     margin: 100px 0px;
 
+}
+
+
+
+
+
+
+
+
+
+
+#app {
+    height: 100%;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 30%;
+    height: 30%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    margin-left: 25%;
+    display: block;
+    width: 250px;
+    height: 380px;
+    object-fit: contain;
 }
