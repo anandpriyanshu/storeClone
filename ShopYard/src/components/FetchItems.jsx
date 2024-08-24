@@ -8,7 +8,7 @@ const FetchItems = () => {
 
     const fetchStatus = useSelector((store) => store.fetchStatus)
     const dispatch = useDispatch()
-    // console.log(fetchStatus)
+
 
     useEffect(() => {
         if (!fetchStatus) return;
@@ -22,7 +22,7 @@ const FetchItems = () => {
                 // dispatch(fetchStatusAction.markFetchDone())
                 // dispatch(fetchStatusAction.markFetchingFinished())
                 dispatch(ItemAction.addInitialItems(items[0]))
-                console.log(ItemAction.addInitialItems(items[0]))
+
 
             })
 

@@ -470,3 +470,13 @@ body {
     height: 380px;
     object-fit: contain;
 }
+
+.slideItems {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideItems p {
+    margin-left: 20%;
+}

@@ -14,7 +14,7 @@ const Footer = () => {
                         <a href="#">Home & Living</a>
                         <a href="#">Beauty</a>
                         <a href="#">Gift Card</a>
-                        <a href="#">Myntra Insider</a>
+                        <a href="#">ShopYard Insider</a>
                     </div>
 
                     <div className="footer_column">
@@ -26,7 +26,7 @@ const Footer = () => {
                         <a href="#">Home & Living</a>
                         <a href="#">Beauty</a>
                         <a href="#">Gift Card</a>
-                        <a href="#">Myntra Insider</a>
+                        <a href="#">ShopYard Insider</a>
                     </div>
 
                     <div className="footer_column">
@@ -38,7 +38,7 @@ const Footer = () => {
                         <a href="#">Home & Living</a>
                         <a href="#">Beauty</a>
                         <a href="#">Gift Card</a>
-                        <a href="#">Myntra Insider</a>
+                        <a href="#">ShopYard Insider</a>
                     </div>
                 </div>
                 <hr />
