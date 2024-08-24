@@ -8,6 +8,15 @@ import Home from './routes/Home.jsx'
 import Bags from './routes/Bags.jsx'
 import StoreClone from './store/index.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import TrendingProducts from './components/TrendingProducts.jsx'
+
+
+const HomeLayout = () => (
+  <>
+    <Home />
+    <TrendingProducts />
+  </>
+);
 
 const router = createBrowserRouter([
 
@@ -17,7 +26,7 @@ const router = createBrowserRouter([
     path: '/', element: <App />,
     children: [
       {
-        path: '/', element: <Home />
+        path: '/', element: <HomeLayout />
       },
       {
         path: '/bag', element: <Bags />

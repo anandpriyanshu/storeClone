@@ -18,14 +18,9 @@ function App() {
     <>
       <Header />
       <FetchItems />
-
-      {/* <Loading /> */}
-      {/* {
-        fetchStatus.currentlyFetching ? <Loading /> : <Outlet />
-      } */}
       <Outlet />
 
-      <TrendingProducts />
+      {/* <TrendingProducts /> */}
 
       <Footer />
     </>
